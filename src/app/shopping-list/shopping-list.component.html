@@ -1,3 +1,7 @@
-<p>shopping-list works!</p>
+<ul>
+  <li *ngFor="let ingridient of ingridients">
+    <a href="#">{{ ingridient.name }} ({{ ingridient.amount }})</a>
+  </li>
+</ul>
 
 <app-shopping-list-edit></app-shopping-list-edit>

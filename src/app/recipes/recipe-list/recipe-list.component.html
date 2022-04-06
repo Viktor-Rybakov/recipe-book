@@ -1,1 +1,7 @@
 <app-recipe-item></app-recipe-item>
+
+<a href="#" *ngFor="let recipe of recipes">
+  <h4>{{ recipe.name }}</h4>
+  <p>{{ recipe.description }}</p>
+  <img [src]="recipe.imagePath" [alt]="recipe.name">
+</a>
